@@ -1,0 +1,242 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Submit Task &mdash; PlantDeepSEA  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Query Results" href="04-Query_Results.html" />
+    <link rel="prev" title="Model Selection" href="02-Model_selection.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> PlantDeepSEA
+          
+
+          
+            
+            <img src="_static/logo113.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Overview</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="01-Home_Page.html">Home Page</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02-Model_selection.html">Model Selection</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Submit Task</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04-Query_Results.html">Query Results</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05-Interpretation_of_results.html">Interpretation of Results</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06-Blast.html">Blast</a></li>
+<li class="toctree-l1"><a class="reference internal" href="07-Case_Studies.html">Case Studies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="08-Statistics.html">Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="09-Statistic.html">Statistics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="10-Citation.html">Citation</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">PlantDeepSEA</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Submit Task</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/03-Submit_Task.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="submit-task">
+<h1>Submit Task<a class="headerlink" href="#submit-task" title="Permalink to this headline">¶</a></h1>
+<p>There are three ways to submit a task.</p>
+<p>For Variant Effector, you can upload a VCF for query. The uploaded file must be a .vcf file ending. The format of the file can be viewed by downloading the sample file in the lower right corner.</p>
+<p>For Sequence Profiler, you can:</p>
+<ol class="arabic simple">
+<li><p>Upload a BED for query. The uploaded file must be a BED file ending. The format of the file can be viewed by downloading the sample file in the lower right corner. For BED files, we only predict the first 5 lines of the file due to limited GPU resources.</p></li>
+<li><p>Using chromosome and position queries. The results will output the effect on the open region of chromatin before and after the 200 bp sequence mutation around the position.</p></li>
+</ol>
+<img alt="_images/01.png" src="_images/01.png" />
+<p>Note:Only rice model supports coordinates and intervals of multiple reference genomes.</p>
+<p>After the task is submitted, it will return to Task ID and run in the background queue. After the task is submitted successfully, it will jump to the waiting interface as shown in the figure below.</p>
+<p>For sequence or position input:</p>
+<a class="reference internal image-reference" href="_images/r.png"><img alt="_images/r.png" class="align-center" src="_images/r.png" style="width: 70%;" /></a>
+<p>For BED input:</p>
+<a class="reference internal image-reference" href="_images/r_bed.png"><img alt="_images/r_bed.png" class="align-center" src="_images/r_bed.png" style="width: 70%;" /></a>
+<p>For VCF input:</p>
+<a class="reference internal image-reference" href="_images/r_vcf.png"><img alt="_images/r_vcf.png" class="align-center" src="_images/r_vcf.png" style="width: 70%;" /></a>
+<p>Remember your task ID and query the results after a while (a few minutes), and your prediction result will store on our server for only 7 days.</p>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="04-Query_Results.html" class="btn btn-neutral float-right" title="Query Results" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="02-Model_selection.html" class="btn btn-neutral float-left" title="Model Selection" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, PlantDeepSEA Contributors
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

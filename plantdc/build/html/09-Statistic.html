@@ -1,0 +1,2070 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Statistics &mdash; PlantDeepSEA  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Citation" href="10-Citation.html" />
+    <link rel="prev" title="Resources" href="08-Statistics.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> PlantDeepSEA
+          
+
+          
+            
+            <img src="_static/logo113.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Overview</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="01-Home_Page.html">Home Page</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02-Model_selection.html">Model Selection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03-Submit_Task.html">Submit Task</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04-Query_Results.html">Query Results</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05-Interpretation_of_results.html">Interpretation of Results</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06-Blast.html">Blast</a></li>
+<li class="toctree-l1"><a class="reference internal" href="07-Case_Studies.html">Case Studies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="08-Statistics.html">Resources</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Statistics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="10-Citation.html">Citation</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">PlantDeepSEA</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Statistics</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/09-Statistic.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="statistics">
+<h1>Statistics<a class="headerlink" href="#statistics" title="Permalink to this headline">¶</a></h1>
+<p>You can slide the table to see more information.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 3%" />
+<col style="width: 9%" />
+<col style="width: 5%" />
+<col style="width: 3%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 3%" />
+<col style="width: 11%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 2%" />
+<col style="width: 1%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Species</p></th>
+<th class="head"><p>Samples</p></th>
+<th class="head"><p>Raw reads number</p></th>
+<th class="head"><p>Mapping rate</p></th>
+<th class="head"><p>Markdup rate</p></th>
+<th class="head"><p>Q30 reads number</p></th>
+<th class="head"><p>TSS Enrichment</p></th>
+<th class="head"><p>Peak number</p></th>
+<th class="head"><p>Sample name</p></th>
+<th class="head"><p>Number of sequences labeled as OCR in training set</p></th>
+<th class="head"><p>Ratio of sequences labeled as OCR in training set</p></th>
+<th class="head"><p>Number of  sequences labeled as OCR in test set</p></th>
+<th class="head"><p>Ratio of sequences labeled as OCR in test set</p></th>
+<th class="head"><p>AUC</p></th>
+<th class="head"><p>AUPRC</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><ol class="upperalpha simple">
+<li><p>thaliana</p></li>
+</ol>
+</td>
+<td><p>Arabidopsis_stem_cell_rep3</p></td>
+<td><p>151660948</p></td>
+<td><p>0.9953</p></td>
+<td><p>0.2564971306918113</p></td>
+<td><p>42330835</p></td>
+<td><p>13.9729520631985</p></td>
+<td><p>30946</p></td>
+<td><p>ATAC-seq, stem cells, rep3</p></td>
+<td><p>139540</p></td>
+<td><p>0.02725390625</p></td>
+<td><p>249</p></td>
+<td><p>0.0249399038461538</p></td>
+<td><p>0.9451</p></td>
+<td><p>0.732</p></td>
+</tr>
+<tr class="row-odd"><td><ol class="upperalpha simple">
+<li><p>thaliana</p></li>
+</ol>
+</td>
+<td><p>Arabidopsis_stem_cell_rep2</p></td>
+<td><p>99733622</p></td>
+<td><p>0.9951</p></td>
+<td><p>0.20354040185164438</p></td>
+<td><p>36838477</p></td>
+<td><p>14.3957565872726</p></td>
+<td><p>31004</p></td>
+<td><p>ATAC-seq, stem cells, rep2</p></td>
+<td><p>240981</p></td>
+<td><p>0.0470666015625</p></td>
+<td><p>436</p></td>
+<td><p>0.0436698717948717</p></td>
+<td><p>0.949</p></td>
+<td><p>0.7398</p></td>
+</tr>
+<tr class="row-even"><td><ol class="upperalpha simple">
+<li><p>thaliana</p></li>
+</ol>
+</td>
+<td><p>Arabidopsis_root_non_hair_cell_rep1</p></td>
+<td><p>94079852</p></td>
+<td><p>0.9949</p></td>
+<td><p>0.10173266429033073</p></td>
+<td><p>60213985</p></td>
+<td><p>11.1915058986815</p></td>
+<td><p>34494</p></td>
+<td><p>ATAC-seq, root non-hair, rep1</p></td>
+<td><p>344379</p></td>
+<td><p>0.0672615234375</p></td>
+<td><p>642</p></td>
+<td><p>0.0643028846153846</p></td>
+<td><p>0.9378</p></td>
+<td><p>0.7252</p></td>
+</tr>
+<tr class="row-odd"><td><ol class="upperalpha simple">
+<li><p>thaliana</p></li>
+</ol>
+</td>
+<td><p>Arabidopsis_root_tip_rep1</p></td>
+<td><p>47952800</p></td>
+<td><p>0.9871</p></td>
+<td><p>0.06039480489147662</p></td>
+<td><p>29813691</p></td>
+<td><p>5.31457229445005</p></td>
+<td><p>17272</p></td>
+<td><p>ATAC-seq, root tips, rep1</p></td>
+<td><p>344701</p></td>
+<td><p>0.0673244140625</p></td>
+<td><p>653</p></td>
+<td><p>0.0654046474358974</p></td>
+<td><p>0.9515</p></td>
+<td><p>0.5505</p></td>
+</tr>
+<tr class="row-even"><td><ol class="upperalpha simple">
+<li><p>thaliana</p></li>
+</ol>
+</td>
+<td><p>Arabidopsis_stem_cell_rep1</p></td>
+<td><p>84687814</p></td>
+<td><p>0.9949</p></td>
+<td><p>0.21809590574625057</p></td>
+<td><p>27662167</p></td>
+<td><p>14.5693552235733</p></td>
+<td><p>29395</p></td>
+<td><p>ATAC-seq, stem cells, rep1</p></td>
+<td><p>356863</p></td>
+<td><p>0.0696998046875</p></td>
+<td><p>689</p></td>
+<td><p>0.0690104166666666</p></td>
+<td><p>0.9502</p></td>
+<td><p>0.7357</p></td>
+</tr>
+<tr class="row-odd"><td><ol class="upperalpha simple">
+<li><p>thaliana</p></li>
+</ol>
+</td>
+<td><p>Arabidopsis_7days_leaf_rep1</p></td>
+<td><p>45225502</p></td>
+<td><p>0.9949</p></td>
+<td><p>0.304</p></td>
+<td><p>13461588</p></td>
+<td><p>12.32</p></td>
+<td><p>25571</p></td>
+<td><p>ATAC-seq, leaf, 7 days, rep1</p></td>
+<td><p>393580</p></td>
+<td><p>0.07687109375</p></td>
+<td><p>709</p></td>
+<td><p>0.0710136217948717</p></td>
+<td><p>0.9214</p></td>
+<td><p>0.5419</p></td>
+</tr>
+<tr class="row-even"><td><ol class="upperalpha simple">
+<li><p>thaliana</p></li>
+</ol>
+</td>
+<td><p>Arabidopsis_root_tip_rep2</p></td>
+<td><p>121576490</p></td>
+<td><p>0.9858</p></td>
+<td><p>0.08497107458851624</p></td>
+<td><p>73908585</p></td>
+<td><p>3.97522221015346</p></td>
+<td><p>10784</p></td>
+<td><p>ATAC-seq, root tips, rep2</p></td>
+<td><p>395322</p></td>
+<td><p>0.077211328125</p></td>
+<td><p>758</p></td>
+<td><p>0.0759214743589743</p></td>
+<td><p>0.9163</p></td>
+<td><p>0.2883</p></td>
+</tr>
+<tr class="row-odd"><td><ol class="upperalpha simple">
+<li><p>thaliana</p></li>
+</ol>
+</td>
+<td><p>Arabidopsis_root_hair_cell_rep1</p></td>
+<td><p>109162074</p></td>
+<td><p>0.993</p></td>
+<td><p>0.10396223783729136</p></td>
+<td><p>68423950</p></td>
+<td><p>9.6220323986828</p></td>
+<td><p>33853</p></td>
+<td><p>ATAC-seq, root hair, rep1</p></td>
+<td><p>414566</p></td>
+<td><p>0.080969921875</p></td>
+<td><p>818</p></td>
+<td><p>0.0819310897435897</p></td>
+<td><p>0.9341</p></td>
+<td><p>0.7047</p></td>
+</tr>
+<tr class="row-even"><td><ol class="upperalpha simple">
+<li><p>thaliana</p></li>
+</ol>
+</td>
+<td><p>Arabidopsis_mesophyll_cell_rep1</p></td>
+<td><p>112729514</p></td>
+<td><p>0.9914</p></td>
+<td><p>0.3276055150916378</p></td>
+<td><p>12581426</p></td>
+<td><p>15.3489272689879</p></td>
+<td><p>21455</p></td>
+<td><p>ATAC-seq, mesophyll  cells, rep1</p></td>
+<td><p>509807</p></td>
+<td><p>0.0995716796875</p></td>
+<td><p>1005</p></td>
+<td><p>0.100661057692307</p></td>
+<td><p>0.9499</p></td>
+<td><p>0.6562</p></td>
+</tr>
+<tr class="row-odd"><td><ol class="upperalpha simple">
+<li><p>thaliana</p></li>
+</ol>
+</td>
+<td><p>Arabidopsis_mesophyll_cell_rep3</p></td>
+<td><p>100129142</p></td>
+<td><p>0.9927</p></td>
+<td><p>0.2577787443739406</p></td>
+<td><p>10905730</p></td>
+<td><p>16.0988764044944</p></td>
+<td><p>21512</p></td>
+<td><p>ATAC-seq, mesophyll  cells, rep3</p></td>
+<td><p>546616</p></td>
+<td><p>0.1067609375</p></td>
+<td><p>1077</p></td>
+<td><p>0.107872596153846</p></td>
+<td><p>0.9493</p></td>
+<td><p>0.646</p></td>
+</tr>
+<tr class="row-even"><td><ol class="upperalpha simple">
+<li><p>thaliana</p></li>
+</ol>
+</td>
+<td><p>Arabidopsis_root_non_hair_cell_rep2</p></td>
+<td><p>24296952</p></td>
+<td><p>0.9936</p></td>
+<td><p>0.05785511697105052</p></td>
+<td><p>15406787</p></td>
+<td><p>9.94380696723346</p></td>
+<td><p>23224</p></td>
+<td><p>ATAC-seq, root non-hair, rep2</p></td>
+<td><p>557959</p></td>
+<td><p>0.1089763671875</p></td>
+<td><p>1078</p></td>
+<td><p>0.107972756410256</p></td>
+<td><p>0.9438</p></td>
+<td><p>0.6593</p></td>
+</tr>
+<tr class="row-odd"><td><ol class="upperalpha simple">
+<li><p>thaliana</p></li>
+</ol>
+</td>
+<td><p>Arabidopsis_mesophyll_cell_rep2</p></td>
+<td><p>99938318</p></td>
+<td><p>0.9932</p></td>
+<td><p>0.286012938500726</p></td>
+<td><p>18268744</p></td>
+<td><p>16.0974753280251</p></td>
+<td><p>23916</p></td>
+<td><p>ATAC-seq, mesophyll  cells, rep2</p></td>
+<td><p>544592</p></td>
+<td><p>0.106365625</p></td>
+<td><p>1087</p></td>
+<td><p>0.108874198717948</p></td>
+<td><p>0.9456</p></td>
+<td><p>0.6785</p></td>
+</tr>
+<tr class="row-even"><td><ol class="upperalpha simple">
+<li><p>thaliana</p></li>
+</ol>
+</td>
+<td><p>Arabidopsis_root_hair_cell_rep2</p></td>
+<td><p>29171548</p></td>
+<td><p>0.9938</p></td>
+<td><p>0.06423431831591522</p></td>
+<td><p>18573026</p></td>
+<td><p>10.8796207745177</p></td>
+<td><p>26433</p></td>
+<td><p>ATAC-seq, root hair, rep2</p></td>
+<td><p>570957</p></td>
+<td><p>0.1115150390625</p></td>
+<td><p>1120</p></td>
+<td><p>0.112179487179487</p></td>
+<td><p>0.9482</p></td>
+<td><p>0.7039</p></td>
+</tr>
+<tr class="row-odd"><td><ol class="upperalpha simple">
+<li><p>thaliana</p></li>
+</ol>
+</td>
+<td><p>Arabidopsis_7days_leaf_rep2</p></td>
+<td><p>149379644</p></td>
+<td><p>0.7171</p></td>
+<td><p>0.3</p></td>
+<td><p>30345758</p></td>
+<td><p>15.54</p></td>
+<td><p>33398</p></td>
+<td><p>ATAC-seq, leaf, 7 days, rep2</p></td>
+<td><p>585868</p></td>
+<td><p>0.11442734375</p></td>
+<td><p>1127</p></td>
+<td><p>0.112880608974358</p></td>
+<td><p>0.9397</p></td>
+<td><p>0.7118</p></td>
+</tr>
+<tr class="row-even"><td><ol class="upperalpha simple" start="2">
+<li><p>distachyon</p></li>
+</ol>
+</td>
+<td><p>Bdistachyon_root_1</p></td>
+<td><p>14543028</p></td>
+<td><p>0.4715</p></td>
+<td><p>0.0551</p></td>
+<td><p>5170222</p></td>
+<td><p>7.474429</p></td>
+<td><p>26244</p></td>
+<td><p>ATAC-seq, root, rep1</p></td>
+<td><p>40093</p></td>
+<td><p>0.0078306640625</p></td>
+<td><p>98</p></td>
+<td><p>0.00660021551724137</p></td>
+<td><p>0.9571</p></td>
+<td><p>0.2512</p></td>
+</tr>
+<tr class="row-odd"><td><ol class="upperalpha simple" start="2">
+<li><p>distachyon</p></li>
+</ol>
+</td>
+<td><p>Bdistachyon_young_leaf_2</p></td>
+<td><p>10291646</p></td>
+<td><p>0.9754</p></td>
+<td><p>0.1146</p></td>
+<td><p>7932579</p></td>
+<td><p>8.145661</p></td>
+<td><p>17113</p></td>
+<td><p>ATAC-seq, young leaf, rep2</p></td>
+<td><p>74266</p></td>
+<td><p>0.014505078125</p></td>
+<td><p>172</p></td>
+<td><p>0.0115840517241379</p></td>
+<td><p>0.9524</p></td>
+<td><p>0.3772</p></td>
+</tr>
+<tr class="row-even"><td><ol class="upperalpha simple" start="2">
+<li><p>distachyon</p></li>
+</ol>
+</td>
+<td><p>Bdistachyon_young_leaf_1</p></td>
+<td><p>10870214</p></td>
+<td><p>0.9604</p></td>
+<td><p>0.1215</p></td>
+<td><p>8569899</p></td>
+<td><p>9.781782</p></td>
+<td><p>23358</p></td>
+<td><p>ATAC-seq, young leaf, rep1</p></td>
+<td><p>112185</p></td>
+<td><p>0.0219111328125</p></td>
+<td><p>280</p></td>
+<td><p>0.0188577586206896</p></td>
+<td><p>0.9474</p></td>
+<td><p>0.4259</p></td>
+</tr>
+<tr class="row-odd"><td><ol class="upperalpha simple" start="2">
+<li><p>distachyon</p></li>
+</ol>
+</td>
+<td><p>Bdistachyon_flower_2</p></td>
+<td><p>24329952</p></td>
+<td><p>0.9589</p></td>
+<td><p>0.5249</p></td>
+<td><p>8403967</p></td>
+<td><p>14.74794</p></td>
+<td><p>46148</p></td>
+<td><p>ATAC-seq, flower, rep2</p></td>
+<td><p>162902</p></td>
+<td><p>0.031816796875</p></td>
+<td><p>377</p></td>
+<td><p>0.025390625</p></td>
+<td><p>0.9598</p></td>
+<td><p>0.5461</p></td>
+</tr>
+<tr class="row-even"><td><ol class="upperalpha simple" start="2">
+<li><p>distachyon</p></li>
+</ol>
+</td>
+<td><p>Bdistachyon_root_2</p></td>
+<td><p>45701156</p></td>
+<td><p>0.5064</p></td>
+<td><p>0.0649</p></td>
+<td><p>17355034</p></td>
+<td><p>6.974961</p></td>
+<td><p>63702</p></td>
+<td><p>ATAC-seq, root, rep2</p></td>
+<td><p>180246</p></td>
+<td><p>0.035204296875</p></td>
+<td><p>426</p></td>
+<td><p>0.0286907327586206</p></td>
+<td><p>0.9551</p></td>
+<td><p>0.4825</p></td>
+</tr>
+<tr class="row-odd"><td><ol class="upperalpha simple" start="2">
+<li><p>distachyon</p></li>
+</ol>
+</td>
+<td><p>Bdistachyon_flower_1</p></td>
+<td><p>39572726</p></td>
+<td><p>0.9536</p></td>
+<td><p>0.5504</p></td>
+<td><p>13233688</p></td>
+<td><p>13.72844</p></td>
+<td><p>52655</p></td>
+<td><p>ATAC-seq, flower, rep1</p></td>
+<td><p>215663</p></td>
+<td><p>0.0421216796875</p></td>
+<td><p>510</p></td>
+<td><p>0.0343480603448275</p></td>
+<td><p>0.9522</p></td>
+<td><p>0.5589</p></td>
+</tr>
+<tr class="row-even"><td><ol class="upperalpha simple" start="2">
+<li><p>distachyon</p></li>
+</ol>
+</td>
+<td><p>Bdistachyon_flag_leaf_2</p></td>
+<td><p>63932496</p></td>
+<td><p>0.9606</p></td>
+<td><p>0.3272</p></td>
+<td><p>37316076</p></td>
+<td><p>13.09903</p></td>
+<td><p>52939</p></td>
+<td><p>ATAC-seq, flag leaf, rep2</p></td>
+<td><p>439499</p></td>
+<td><p>0.0858396484375</p></td>
+<td><p>1071</p></td>
+<td><p>0.0721309267241379</p></td>
+<td><p>0.9384</p></td>
+<td><p>0.5834</p></td>
+</tr>
+<tr class="row-odd"><td><ol class="upperalpha simple" start="2">
+<li><p>distachyon</p></li>
+</ol>
+</td>
+<td><p>Bdistachyon_panicle_1</p></td>
+<td><p>116923382</p></td>
+<td><p>0.9716</p></td>
+<td><p>0.5741</p></td>
+<td><p>39556921</p></td>
+<td><p>15.73158</p></td>
+<td><p>59336</p></td>
+<td><p>ATAC-seq, young panicle, rep1</p></td>
+<td><p>408596</p></td>
+<td><p>0.07980390625</p></td>
+<td><p>1104</p></td>
+<td><p>0.074353448275862</p></td>
+<td><p>0.9529</p></td>
+<td><p>0.6807</p></td>
+</tr>
+<tr class="row-even"><td><ol class="upperalpha simple" start="2">
+<li><p>distachyon</p></li>
+</ol>
+</td>
+<td><p>Bdistachyon_flag_leaf_1</p></td>
+<td><p>94067702</p></td>
+<td><p>0.9695</p></td>
+<td><p>0.3964</p></td>
+<td><p>49821067</p></td>
+<td><p>13.45077</p></td>
+<td><p>57838</p></td>
+<td><p>ATAC-seq, flag leaf, rep1</p></td>
+<td><p>452662</p></td>
+<td><p>0.088410546875</p></td>
+<td><p>1117</p></td>
+<td><p>0.0752289870689655</p></td>
+<td><p>0.9386</p></td>
+<td><p>0.6084</p></td>
+</tr>
+<tr class="row-odd"><td><ol class="upperalpha simple" start="15">
+<li><p>sativa</p></li>
+</ol>
+</td>
+<td><p>ZS97_panicle_1</p></td>
+<td><p>57620486</p></td>
+<td><p>0.9742</p></td>
+<td><p>0.3419</p></td>
+<td><p>28421790</p></td>
+<td><p>14.37703</p></td>
+<td><p>67787</p></td>
+<td><p>ATAC-seq, young panicle, rep1</p></td>
+<td><p>34913</p></td>
+<td><p>0.0068189453125</p></td>
+<td><p>169</p></td>
+<td><p>0.00846354166666666</p></td>
+<td><p>0.9616</p></td>
+<td><p>0.6601</p></td>
+</tr>
+<tr class="row-even"><td><ol class="upperalpha simple" start="15">
+<li><p>sativa</p></li>
+</ol>
+</td>
+<td><p>MH63_flower_2c_1</p></td>
+<td><p>85892532</p></td>
+<td><p>0.9856</p></td>
+<td><p>0.151</p></td>
+<td><p>58461515</p></td>
+<td><p>7.702464</p></td>
+<td><p>93603</p></td>
+<td><p>ATAC-seq, stamen &amp; pistil, rep1</p></td>
+<td><p>49527</p></td>
+<td><p>0.0096732421875</p></td>
+<td><p>131</p></td>
+<td><p>0.00882273706896551</p></td>
+<td><p>0.9746</p></td>
+<td><p>0.4953</p></td>
+</tr>
+<tr class="row-odd"><td><ol class="upperalpha simple" start="15">
+<li><p>sativa</p></li>
+</ol>
+</td>
+<td><p>MH63_flower_2c_2</p></td>
+<td><p>122252060</p></td>
+<td><p>0.9853</p></td>
+<td><p>0.2364</p></td>
+<td><p>76147515</p></td>
+<td><p>9.221702</p></td>
+<td><p>96572</p></td>
+<td><p>ATAC-seq, stamen &amp; pistil, rep2</p></td>
+<td><p>68509</p></td>
+<td><p>0.0133806640625</p></td>
+<td><p>181</p></td>
+<td><p>0.0121901939655172</p></td>
+<td><p>0.981</p></td>
+<td><p>0.5626</p></td>
+</tr>
+<tr class="row-even"><td><ol class="upperalpha simple" start="15">
+<li><p>sativa</p></li>
+</ol>
+</td>
+<td><p>ZS97_panicle_5</p></td>
+<td><p>65002916</p></td>
+<td><p>0.9873</p></td>
+<td><p>0.3547</p></td>
+<td><p>29150864</p></td>
+<td><p>10.7186</p></td>
+<td><p>67179</p></td>
+<td><p>ATAC-seq, young panicle, rep5</p></td>
+<td><p>140295</p></td>
+<td><p>0.0274013671875</p></td>
+<td><p>482</p></td>
+<td><p>0.0160924145299145</p></td>
+<td><p>0.955</p></td>
+<td><p>0.6319</p></td>
+</tr>
+<tr class="row-odd"><td><ol class="upperalpha simple" start="15">
+<li><p>sativa</p></li>
+</ol>
+</td>
+<td><p>ZS97_panicle_4</p></td>
+<td><p>57332524</p></td>
+<td><p>0.9902</p></td>
+<td><p>0.2823</p></td>
+<td><p>28807075</p></td>
+<td><p>10.30729</p></td>
+<td><p>67392</p></td>
+<td><p>ATAC-seq, young panicle, rep4</p></td>
+<td><p>148634</p></td>
+<td><p>0.029030078125</p></td>
+<td><p>537</p></td>
+<td><p>0.0179286858974358</p></td>
+<td><p>0.959</p></td>
+<td><p>0.6525</p></td>
+</tr>
+<tr class="row-even"><td><ol class="upperalpha simple" start="15">
+<li><p>sativa</p></li>
+</ol>
+</td>
+<td><p>MH63_flag_leaf_2</p></td>
+<td><p>64745662</p></td>
+<td><p>0.9861</p></td>
+<td><p>0.2291</p></td>
+<td><p>30658582</p></td>
+<td><p>6.834124</p></td>
+<td><p>59063</p></td>
+<td><p>ATAC-seq, flag leaf, rep2</p></td>
+<td><p>119482</p></td>
+<td><p>0.023336328125</p></td>
+<td><p>295</p></td>
+<td><p>0.0198679956896551</p></td>
+<td><p>0.9508</p></td>
+<td><p>0.5332</p></td>
+</tr>
+<tr class="row-odd"><td><ol class="upperalpha simple" start="15">
+<li><p>sativa</p></li>
+</ol>
+</td>
+<td><p>ZS97_young_leaf_1</p></td>
+<td><p>174433758</p></td>
+<td><p>0.9755</p></td>
+<td><p>0.5716</p></td>
+<td><p>45901408</p></td>
+<td><p>17.78239</p></td>
+<td><p>62667</p></td>
+<td><p>ATAC-seq, young leaf, rep1</p></td>
+<td><p>234188</p></td>
+<td><p>0.04573984375</p></td>
+<td><p>842</p></td>
+<td><p>0.0281116452991453</p></td>
+<td><p>0.9465</p></td>
+<td><p>0.5805</p></td>
+</tr>
+<tr class="row-even"><td><ol class="upperalpha simple" start="15">
+<li><p>sativa</p></li>
+</ol>
+</td>
+<td><p>ZS97_panicle_2</p></td>
+<td><p>24321634</p></td>
+<td><p>0.9875</p></td>
+<td><p>0.3067</p></td>
+<td><p>11047821</p></td>
+<td><p>13.95428</p></td>
+<td><p>51875</p></td>
+<td><p>ATAC-seq, young panicle, rep2</p></td>
+<td><p>120640</p></td>
+<td><p>0.0235625</p></td>
+<td><p>583</p></td>
+<td><p>0.0291967147435897</p></td>
+<td><p>0.9738</p></td>
+<td><p>0.6329</p></td>
+</tr>
+<tr class="row-odd"><td><ol class="upperalpha simple" start="15">
+<li><p>sativa</p></li>
+</ol>
+</td>
+<td><p>MH63_panicle_2</p></td>
+<td><p>33309586</p></td>
+<td><p>0.9863</p></td>
+<td><p>0.3309</p></td>
+<td><p>14732470</p></td>
+<td><p>15.59018</p></td>
+<td><p>54837</p></td>
+<td><p>ATAC-seq, young panicle, rep2</p></td>
+<td><p>167176</p></td>
+<td><p>0.0326515625</p></td>
+<td><p>435</p></td>
+<td><p>0.029296875</p></td>
+<td><p>0.9686</p></td>
+<td><p>0.6312</p></td>
+</tr>
+<tr class="row-even"><td><ol class="upperalpha simple" start="15">
+<li><p>sativa</p></li>
+</ol>
+</td>
+<td><p>MH63_young_leaf_2</p></td>
+<td><p>70109302</p></td>
+<td><p>0.9854</p></td>
+<td><p>0.4114</p></td>
+<td><p>28029716</p></td>
+<td><p>14.21247</p></td>
+<td><p>52855</p></td>
+<td><p>ATAC-seq, young leaf, rep2</p></td>
+<td><p>169796</p></td>
+<td><p>0.03316328125</p></td>
+<td><p>445</p></td>
+<td><p>0.0299703663793103</p></td>
+<td><p>0.952</p></td>
+<td><p>0.5959</p></td>
+</tr>
+<tr class="row-odd"><td><ol class="upperalpha simple" start="15">
+<li><p>sativa</p></li>
+</ol>
+</td>
+<td><p>MH63_panicle_1</p></td>
+<td><p>58832756</p></td>
+<td><p>0.9843</p></td>
+<td><p>0.4198</p></td>
+<td><p>24409468</p></td>
+<td><p>14.83604</p></td>
+<td><p>66717</p></td>
+<td><p>ATAC-seq, young panicle, rep1</p></td>
+<td><p>204168</p></td>
+<td><p>0.0398765625</p></td>
+<td><p>506</p></td>
+<td><p>0.0340786637931034</p></td>
+<td><p>0.9636</p></td>
+<td><p>0.6216</p></td>
+</tr>
+<tr class="row-even"><td><ol class="upperalpha simple" start="15">
+<li><p>sativa</p></li>
+</ol>
+</td>
+<td><p>MH63_panicle_3</p></td>
+<td><p>51162146</p></td>
+<td><p>0.9863</p></td>
+<td><p>0.3469</p></td>
+<td><p>22157517</p></td>
+<td><p>15.72402</p></td>
+<td><p>62842</p></td>
+<td><p>ATAC-seq, young panicle, rep3</p></td>
+<td><p>201314</p></td>
+<td><p>0.039319140625</p></td>
+<td><p>515</p></td>
+<td><p>0.0346848060344827</p></td>
+<td><p>0.9708</p></td>
+<td><p>0.667</p></td>
+</tr>
+<tr class="row-odd"><td><ol class="upperalpha simple" start="15">
+<li><p>sativa</p></li>
+</ol>
+</td>
+<td><p>MH63_panicle_5</p></td>
+<td><p>46253072</p></td>
+<td><p>0.9874</p></td>
+<td><p>0.2876</p></td>
+<td><p>25483264</p></td>
+<td><p>11.9454</p></td>
+<td><p>73604</p></td>
+<td><p>ATAC-seq, young panicle, rep5</p></td>
+<td><p>236853</p></td>
+<td><p>0.0462603515625</p></td>
+<td><p>581</p></td>
+<td><p>0.039129849137931</p></td>
+<td><p>0.9588</p></td>
+<td><p>0.6203</p></td>
+</tr>
+<tr class="row-even"><td><ol class="upperalpha simple" start="15">
+<li><p>sativa</p></li>
+</ol>
+</td>
+<td><p>MH63_panicle_4</p></td>
+<td><p>55158396</p></td>
+<td><p>0.9752</p></td>
+<td><p>0.3268</p></td>
+<td><p>26097080</p></td>
+<td><p>11.75267</p></td>
+<td><p>74025</p></td>
+<td><p>ATAC-seq, young panicle, rep4</p></td>
+<td><p>234237</p></td>
+<td><p>0.0457494140625</p></td>
+<td><p>584</p></td>
+<td><p>0.0393318965517241</p></td>
+<td><p>0.9573</p></td>
+<td><p>0.6266</p></td>
+</tr>
+<tr class="row-odd"><td><ol class="upperalpha simple" start="15">
+<li><p>sativa</p></li>
+</ol>
+</td>
+<td><p>MH63_young_leaf_1</p></td>
+<td><p>138938116</p></td>
+<td><p>0.9864</p></td>
+<td><p>0.4966</p></td>
+<td><p>44734544</p></td>
+<td><p>13.01291</p></td>
+<td><p>65991</p></td>
+<td><p>ATAC-seq, young leaf, rep1</p></td>
+<td><p>229037</p></td>
+<td><p>0.0447337890625</p></td>
+<td><p>595</p></td>
+<td><p>0.0400727370689655</p></td>
+<td><p>0.9457</p></td>
+<td><p>0.607</p></td>
+</tr>
+<tr class="row-even"><td><ol class="upperalpha simple" start="15">
+<li><p>sativa</p></li>
+</ol>
+</td>
+<td><p>MH63_root_2</p></td>
+<td><p>68284992</p></td>
+<td><p>0.987</p></td>
+<td><p>0.4127</p></td>
+<td><p>32567024</p></td>
+<td><p>14.21247</p></td>
+<td><p>71764</p></td>
+<td><p>ATAC-seq, root, rep2</p></td>
+<td><p>253463</p></td>
+<td><p>0.0495044921875</p></td>
+<td><p>633</p></td>
+<td><p>0.0426320043103448</p></td>
+<td><p>0.9563</p></td>
+<td><p>0.6308</p></td>
+</tr>
+<tr class="row-odd"><td><ol class="upperalpha simple" start="15">
+<li><p>sativa</p></li>
+</ol>
+</td>
+<td><p>ZS97_young_leaf_2</p></td>
+<td><p>28235594</p></td>
+<td><p>0.9843</p></td>
+<td><p>0.3616</p></td>
+<td><p>11787053</p></td>
+<td><p>17.22278</p></td>
+<td><p>35795</p></td>
+<td><p>ATAC-seq, young leaf, rep2</p></td>
+<td><p>356413</p></td>
+<td><p>0.0696119140625</p></td>
+<td><p>1297</p></td>
+<td><p>0.0433026175213675</p></td>
+<td><p>0.9603</p></td>
+<td><p>0.5353</p></td>
+</tr>
+<tr class="row-even"><td><ol class="upperalpha simple" start="15">
+<li><p>sativa</p></li>
+</ol>
+</td>
+<td><p>ZS97_panicle_3</p></td>
+<td><p>36435606</p></td>
+<td><p>0.9844</p></td>
+<td><p>0.3379</p></td>
+<td><p>15282506</p></td>
+<td><p>13.70468</p></td>
+<td><p>55220</p></td>
+<td><p>ATAC-seq, young panicle, rep3</p></td>
+<td><p>182557</p></td>
+<td><p>0.0356556640625</p></td>
+<td><p>890</p></td>
+<td><p>0.0445713141025641</p></td>
+<td><p>0.9646</p></td>
+<td><p>0.6259</p></td>
+</tr>
+<tr class="row-odd"><td><ol class="upperalpha simple" start="15">
+<li><p>sativa</p></li>
+</ol>
+</td>
+<td><p>MH63_flag_leaf_1</p></td>
+<td><p>126342026</p></td>
+<td><p>0.987</p></td>
+<td><p>0.273</p></td>
+<td><p>68545456</p></td>
+<td><p>9.103924</p></td>
+<td><p>85130</p></td>
+<td><p>ATAC-seq, flag leaf, rep1</p></td>
+<td><p>292602</p></td>
+<td><p>0.057148828125</p></td>
+<td><p>744</p></td>
+<td><p>0.0501077586206896</p></td>
+<td><p>0.9345</p></td>
+<td><p>0.5805</p></td>
+</tr>
+<tr class="row-even"><td><ol class="upperalpha simple" start="15">
+<li><p>sativa</p></li>
+</ol>
+</td>
+<td><p>ZS97_root_1</p></td>
+<td><p>166991452</p></td>
+<td><p>0.9781</p></td>
+<td><p>0.5518</p></td>
+<td><p>54000690</p></td>
+<td><p>15.53395</p></td>
+<td><p>79269</p></td>
+<td><p>ATAC-seq, root, rep1</p></td>
+<td><p>407748</p></td>
+<td><p>0.07963828125</p></td>
+<td><p>1567</p></td>
+<td><p>0.0523170405982906</p></td>
+<td><p>0.9495</p></td>
+<td><p>0.62</p></td>
+</tr>
+<tr class="row-odd"><td><ol class="upperalpha simple" start="15">
+<li><p>sativa</p></li>
+</ol>
+</td>
+<td><p>ZS97_root_2</p></td>
+<td><p>74643946</p></td>
+<td><p>0.985</p></td>
+<td><p>0.4001</p></td>
+<td><p>34476273</p></td>
+<td><p>15.76322</p></td>
+<td><p>74959</p></td>
+<td><p>ATAC-seq, root, rep2</p></td>
+<td><p>426907</p></td>
+<td><p>0.0833802734375</p></td>
+<td><p>1704</p></td>
+<td><p>0.0568910256410256</p></td>
+<td><p>0.9504</p></td>
+<td><p>0.5768</p></td>
+</tr>
+<tr class="row-even"><td><ol class="upperalpha simple" start="15">
+<li><p>sativa</p></li>
+</ol>
+</td>
+<td><p>MH63_lemma_1</p></td>
+<td><p>74239198</p></td>
+<td><p>0.9867</p></td>
+<td><p>0.2213</p></td>
+<td><p>48732306</p></td>
+<td><p>10.19429</p></td>
+<td><p>93847</p></td>
+<td><p>ATAC-seq, lemma &amp; palea, rep1</p></td>
+<td><p>330188</p></td>
+<td><p>0.06448984375</p></td>
+<td><p>847</p></td>
+<td><p>0.0570447198275862</p></td>
+<td><p>0.9458</p></td>
+<td><p>0.6285</p></td>
+</tr>
+<tr class="row-odd"><td><ol class="upperalpha simple" start="15">
+<li><p>sativa</p></li>
+</ol>
+</td>
+<td><p>MH63_lemma_2</p></td>
+<td><p>85247604</p></td>
+<td><p>0.9856</p></td>
+<td><p>0.1906</p></td>
+<td><p>56875872</p></td>
+<td><p>9.809293</p></td>
+<td><p>100375</p></td>
+<td><p>ATAC-seq, lemma &amp; palea, rep2</p></td>
+<td><p>336402</p></td>
+<td><p>0.065703515625</p></td>
+<td><p>856</p></td>
+<td><p>0.0576508620689655</p></td>
+<td><p>0.9478</p></td>
+<td><p>0.6283</p></td>
+</tr>
+<tr class="row-even"><td><ol class="upperalpha simple" start="15">
+<li><p>sativa</p></li>
+</ol>
+</td>
+<td><p>MH63_root_1</p></td>
+<td><p>223711752</p></td>
+<td><p>0.9769</p></td>
+<td><p>0.5957</p></td>
+<td><p>67402069</p></td>
+<td><p>15.61443</p></td>
+<td><p>83825</p></td>
+<td><p>ATAC-seq, root, rep1</p></td>
+<td><p>343090</p></td>
+<td><p>0.067009765625</p></td>
+<td><p>875</p></td>
+<td><p>0.0589304956896551</p></td>
+<td><p>0.9535</p></td>
+<td><p>0.6631</p></td>
+</tr>
+<tr class="row-odd"><td><ol class="upperalpha simple" start="15">
+<li><p>sativa</p></li>
+</ol>
+</td>
+<td><p>ZS97_flag_leaf_2</p></td>
+<td><p>163670488</p></td>
+<td><p>0.9661</p></td>
+<td><p>0.6583</p></td>
+<td><p>39551245</p></td>
+<td><p>14.21574</p></td>
+<td><p>77310</p></td>
+<td><p>ATAC-seq, flag leaf, rep2</p></td>
+<td><p>270937</p></td>
+<td><p>0.0529173828125</p></td>
+<td><p>1354</p></td>
+<td><p>0.0678084935897435</p></td>
+<td><p>0.9468</p></td>
+<td><p>0.5868</p></td>
+</tr>
+<tr class="row-even"><td><ol class="upperalpha simple" start="15">
+<li><p>sativa</p></li>
+</ol>
+</td>
+<td><p>ZS97_flag_leaf_1</p></td>
+<td><p>92533216</p></td>
+<td><p>0.9825</p></td>
+<td><p>0.305</p></td>
+<td><p>46956080</p></td>
+<td><p>14.77318</p></td>
+<td><p>75516</p></td>
+<td><p>ATAC-seq, flag leaf, rep1</p></td>
+<td><p>324916</p></td>
+<td><p>0.06346015625</p></td>
+<td><p>1592</p></td>
+<td><p>0.0797275641025641</p></td>
+<td><p>0.95</p></td>
+<td><p>0.5917</p></td>
+</tr>
+<tr class="row-odd"><td><ol class="upperalpha simple" start="15">
+<li><p>sativa</p></li>
+</ol>
+</td>
+<td><p>ZS97_flower_1</p></td>
+<td><p>101666618</p></td>
+<td><p>0.9832</p></td>
+<td><p>0.2821</p></td>
+<td><p>61616639</p></td>
+<td><p>12.83608</p></td>
+<td><p>110778</p></td>
+<td><p>ATAC-seq, stamen &amp; pistil, rep1</p></td>
+<td><p>449357</p></td>
+<td><p>0.0877650390625</p></td>
+<td><p>2165</p></td>
+<td><p>0.108423477564102</p></td>
+<td><p>0.9383</p></td>
+<td><p>0.6421</p></td>
+</tr>
+<tr class="row-even"><td><ol class="upperalpha simple" start="15">
+<li><p>sativa</p></li>
+</ol>
+</td>
+<td><p>ZS97_flower_2</p></td>
+<td><p>98606866</p></td>
+<td><p>0.9858</p></td>
+<td><p>0.2658</p></td>
+<td><p>61262472</p></td>
+<td><p>13.17765</p></td>
+<td><p>103872</p></td>
+<td><p>ATAC-seq, stamen &amp; pistil, rep2</p></td>
+<td><p>462941</p></td>
+<td><p>0.0904181640625</p></td>
+<td><p>2183</p></td>
+<td><p>0.109324919871794</p></td>
+<td><p>0.9382</p></td>
+<td><p>0.6344</p></td>
+</tr>
+<tr class="row-odd"><td><ol class="upperalpha simple" start="15">
+<li><p>sativa</p></li>
+</ol>
+</td>
+<td><p>ZS97_lemma_2</p></td>
+<td><p>38347774</p></td>
+<td><p>0.9865</p></td>
+<td><p>0.1542</p></td>
+<td><p>26758090</p></td>
+<td><p>12.02033</p></td>
+<td><p>73452</p></td>
+<td><p>ATAC-seq, lemma &amp; palea, rep2</p></td>
+<td><p>494763</p></td>
+<td><p>0.0966333984375</p></td>
+<td><p>2340</p></td>
+<td><p>0.1171875</p></td>
+<td><p>0.9563</p></td>
+<td><p>0.6211</p></td>
+</tr>
+<tr class="row-even"><td><ol class="upperalpha simple" start="15">
+<li><p>sativa</p></li>
+</ol>
+</td>
+<td><p>ZS97_lemma_1</p></td>
+<td><p>37055650</p></td>
+<td><p>0.9861</p></td>
+<td><p>0.1391</p></td>
+<td><p>26193428</p></td>
+<td><p>11.66184</p></td>
+<td><p>85427</p></td>
+<td><p>ATAC-seq, lemma &amp; palea, rep1</p></td>
+<td><p>601667</p></td>
+<td><p>0.1175130859375</p></td>
+<td><p>2838</p></td>
+<td><p>0.142127403846153</p></td>
+<td><p>0.9599</p></td>
+<td><p>0.6366</p></td>
+</tr>
+<tr class="row-odd"><td><ol class="upperalpha simple" start="19">
+<li><p>bicolor</p></li>
+</ol>
+</td>
+<td><p>Sorghum_panicle_bottom_2</p></td>
+<td><p>182882314</p></td>
+<td><p>0.987</p></td>
+<td><p>0.5751</p></td>
+<td><p>53041704</p></td>
+<td><p>8.012612</p></td>
+<td><p>90294</p></td>
+<td><p>ATAC-seq, bottom part of panicle, rep2</p></td>
+<td><p>14006</p></td>
+<td><p>0.0021884375</p></td>
+<td><p>186</p></td>
+<td><p>0.00232872596153846</p></td>
+<td><p>0.966</p></td>
+<td><p>0.6159</p></td>
+</tr>
+<tr class="row-even"><td><ol class="upperalpha simple" start="19">
+<li><p>bicolor</p></li>
+</ol>
+</td>
+<td><p>Sorghum_panicle_top_1</p></td>
+<td><p>37071094</p></td>
+<td><p>0.8527</p></td>
+<td><p>0.2408</p></td>
+<td><p>16239681</p></td>
+<td><p>8.174673</p></td>
+<td><p>50825</p></td>
+<td><p>ATAC-seq, upper part of  panicle, rep1</p></td>
+<td><p>14920</p></td>
+<td><p>0.00233125</p></td>
+<td><p>202</p></td>
+<td><p>0.00252904647435897</p></td>
+<td><p>0.9778</p></td>
+<td><p>0.5337</p></td>
+</tr>
+<tr class="row-odd"><td><ol class="upperalpha simple" start="19">
+<li><p>bicolor</p></li>
+</ol>
+</td>
+<td><p>Sorghum_root_2c_1</p></td>
+<td><p>63639878</p></td>
+<td><p>0.8728</p></td>
+<td><p>0.4883</p></td>
+<td><p>10827038</p></td>
+<td><p>10.8986</p></td>
+<td><p>47897</p></td>
+<td><p>ATAC-seq, root, rep1</p></td>
+<td><p>37103</p></td>
+<td><p>0.00579734375</p></td>
+<td><p>463</p></td>
+<td><p>0.00579677483974359</p></td>
+<td><p>0.9907</p></td>
+<td><p>0.5791</p></td>
+</tr>
+<tr class="row-even"><td><ol class="upperalpha simple" start="19">
+<li><p>bicolor</p></li>
+</ol>
+</td>
+<td><p>Sorghum_lemma_2</p></td>
+<td><p>169146264</p></td>
+<td><p>0.9961</p></td>
+<td><p>0.1574</p></td>
+<td><p>114443589</p></td>
+<td><p>7.666836</p></td>
+<td><p>116149</p></td>
+<td><p>ATAC-seq, lemma &amp; palea, rep2</p></td>
+<td><p>44558</p></td>
+<td><p>0.0069621875</p></td>
+<td><p>588</p></td>
+<td><p>0.00736177884615384</p></td>
+<td><p>0.972</p></td>
+<td><p>0.6932</p></td>
+</tr>
+<tr class="row-odd"><td><ol class="upperalpha simple" start="19">
+<li><p>bicolor</p></li>
+</ol>
+</td>
+<td><p>Sorghum_young_leaf_2c_2</p></td>
+<td><p>8595822</p></td>
+<td><p>0.9875</p></td>
+<td><p>0.1669</p></td>
+<td><p>5295135</p></td>
+<td><p>13.03469</p></td>
+<td><p>32824</p></td>
+<td><p>ATAC-seq, young leaf, rep2</p></td>
+<td><p>47084</p></td>
+<td><p>0.007356875</p></td>
+<td><p>653</p></td>
+<td><p>0.00817558092948718</p></td>
+<td><p>0.9856</p></td>
+<td><p>0.5384</p></td>
+</tr>
+<tr class="row-even"><td><ol class="upperalpha simple" start="19">
+<li><p>bicolor</p></li>
+</ol>
+</td>
+<td><p>Sorghum_young_leaf_2c_1</p></td>
+<td><p>112887230</p></td>
+<td><p>0.9612</p></td>
+<td><p>0.5199</p></td>
+<td><p>28765923</p></td>
+<td><p>15.35077</p></td>
+<td><p>60239</p></td>
+<td><p>ATAC-seq, young leaf, rep1</p></td>
+<td><p>46878</p></td>
+<td><p>0.0073246875</p></td>
+<td><p>654</p></td>
+<td><p>0.00818810096153846</p></td>
+<td><p>0.9841</p></td>
+<td><p>0.6162</p></td>
+</tr>
+<tr class="row-odd"><td><ol class="upperalpha simple" start="19">
+<li><p>bicolor</p></li>
+</ol>
+</td>
+<td><p>Sorghum_panicle_bottom_1</p></td>
+<td><p>84595194</p></td>
+<td><p>0.982</p></td>
+<td><p>0.3542</p></td>
+<td><p>38476674</p></td>
+<td><p>7.692585</p></td>
+<td><p>80589</p></td>
+<td><p>ATAC-seq, bottom part of panicle, rep1</p></td>
+<td><p>51301</p></td>
+<td><p>0.00801578125</p></td>
+<td><p>672</p></td>
+<td><p>0.00841346153846153</p></td>
+<td><p>0.9691</p></td>
+<td><p>0.5645</p></td>
+</tr>
+<tr class="row-even"><td><ol class="upperalpha simple" start="19">
+<li><p>bicolor</p></li>
+</ol>
+</td>
+<td><p>Sorghum_panicle_top_2</p></td>
+<td><p>39628252</p></td>
+<td><p>0.99</p></td>
+<td><p>0.3257</p></td>
+<td><p>19320478</p></td>
+<td><p>8.858769</p></td>
+<td><p>57830</p></td>
+<td><p>ATAC-seq, upper part of panicle, rep2</p></td>
+<td><p>54562</p></td>
+<td><p>0.0085253125</p></td>
+<td><p>690</p></td>
+<td><p>0.00863882211538461</p></td>
+<td><p>0.9776</p></td>
+<td><p>0.5835</p></td>
+</tr>
+<tr class="row-odd"><td><ol class="upperalpha simple" start="19">
+<li><p>bicolor</p></li>
+</ol>
+</td>
+<td><p>Sorghum_flower_1</p></td>
+<td><p>203189918</p></td>
+<td><p>0.9957</p></td>
+<td><p>0.1605</p></td>
+<td><p>133533451</p></td>
+<td><p>7.667173</p></td>
+<td><p>143324</p></td>
+<td><p>ATAC-seq, stamen &amp; pistil, rep1</p></td>
+<td><p>64437</p></td>
+<td><p>0.01006828125</p></td>
+<td><p>816</p></td>
+<td><p>0.0102163461538461</p></td>
+<td><p>0.9721</p></td>
+<td><p>0.7123</p></td>
+</tr>
+<tr class="row-even"><td><ol class="upperalpha simple" start="19">
+<li><p>bicolor</p></li>
+</ol>
+</td>
+<td><p>Sorghum_flower_2</p></td>
+<td><p>245343676</p></td>
+<td><p>0.9966</p></td>
+<td><p>0.1495</p></td>
+<td><p>160133173</p></td>
+<td><p>7.320194</p></td>
+<td><p>160069</p></td>
+<td><p>ATAC-seq, stamen &amp; pistil, rep2</p></td>
+<td><p>65513</p></td>
+<td><p>0.01023640625</p></td>
+<td><p>838</p></td>
+<td><p>0.0104917868589743</p></td>
+<td><p>0.9714</p></td>
+<td><p>0.7187</p></td>
+</tr>
+<tr class="row-odd"><td><ol class="upperalpha simple" start="19">
+<li><p>bicolor</p></li>
+</ol>
+</td>
+<td><p>Sorghum_flag_leaf_1</p></td>
+<td><p>130334958</p></td>
+<td><p>0.9927</p></td>
+<td><p>0.4356</p></td>
+<td><p>52334264</p></td>
+<td><p>11.24004</p></td>
+<td><p>55991</p></td>
+<td><p>ATAC-seq, flag leaf, rep1</p></td>
+<td><p>68154</p></td>
+<td><p>0.0106490625</p></td>
+<td><p>881</p></td>
+<td><p>0.0110301482371794</p></td>
+<td><p>0.977</p></td>
+<td><p>0.613</p></td>
+</tr>
+<tr class="row-even"><td><ol class="upperalpha simple" start="19">
+<li><p>bicolor</p></li>
+</ol>
+</td>
+<td><p>Sorghum_flag_leaf_2</p></td>
+<td><p>144450460</p></td>
+<td><p>0.9921</p></td>
+<td><p>0.412</p></td>
+<td><p>60112869</p></td>
+<td><p>10.82261</p></td>
+<td><p>69930</p></td>
+<td><p>ATAC-seq, flag leaf, rep2</p></td>
+<td><p>72738</p></td>
+<td><p>0.0113653125</p></td>
+<td><p>926</p></td>
+<td><p>0.0115935496794871</p></td>
+<td><p>0.9753</p></td>
+<td><p>0.5691</p></td>
+</tr>
+<tr class="row-odd"><td><ol class="upperalpha simple" start="19">
+<li><p>bicolor</p></li>
+</ol>
+</td>
+<td><p>Sorghum_lemma_1</p></td>
+<td><p>95665980</p></td>
+<td><p>0.9952</p></td>
+<td><p>0.1691</p></td>
+<td><p>65442690</p></td>
+<td><p>8.990719</p></td>
+<td><p>105032</p></td>
+<td><p>ATAC-seq, lemma &amp; palea, rep1</p></td>
+<td><p>75782</p></td>
+<td><p>0.0118409375</p></td>
+<td><p>990</p></td>
+<td><p>0.0123948317307692</p></td>
+<td><p>0.9745</p></td>
+<td><p>0.6452</p></td>
+</tr>
+<tr class="row-even"><td><ol class="upperalpha simple" start="19">
+<li><p>bicolor</p></li>
+</ol>
+</td>
+<td><p>Sorghum_root_2c_2</p></td>
+<td><p>397222962</p></td>
+<td><p>0.9907</p></td>
+<td><p>0.7644</p></td>
+<td><p>60516298</p></td>
+<td><p>12.3933</p></td>
+<td><p>79326</p></td>
+<td><p>ATAC-seq, root, rep2</p></td>
+<td><p>97185</p></td>
+<td><p>0.01518515625</p></td>
+<td><p>1236</p></td>
+<td><p>0.0154747596153846</p></td>
+<td><p>0.9671</p></td>
+<td><p>0.5624</p></td>
+</tr>
+<tr class="row-odd"><td><ol class="upperalpha simple" start="19">
+<li><p>italica</p></li>
+</ol>
+</td>
+<td><p>Sitalica_panicle_1</p></td>
+<td><p>177674200</p></td>
+<td><p>0.9883</p></td>
+<td><p>0.2021</p></td>
+<td><p>126227388</p></td>
+<td><p>6.391608</p></td>
+<td><p>102264</p></td>
+<td><p>ATAC-seq, young panicle, rep1</p></td>
+<td><p>48566</p></td>
+<td><p>0.009485546875</p></td>
+<td><p>157</p></td>
+<td><p>0.00524172008547008</p></td>
+<td><p>0.9489</p></td>
+<td><p>0.7689</p></td>
+</tr>
+<tr class="row-even"><td><ol class="upperalpha simple" start="19">
+<li><p>italica</p></li>
+</ol>
+</td>
+<td><p>Sitalica_young_leaf_2c_1</p></td>
+<td><p>70067138</p></td>
+<td><p>0.9694</p></td>
+<td><p>0.4212</p></td>
+<td><p>29659320</p></td>
+<td><p>8.260901</p></td>
+<td><p>69107</p></td>
+<td><p>ATAC-seq, young leaf, rep1</p></td>
+<td><p>65424</p></td>
+<td><p>0.012778125</p></td>
+<td><p>224</p></td>
+<td><p>0.00747863247863247</p></td>
+<td><p>0.9734</p></td>
+<td><p>0.6251</p></td>
+</tr>
+<tr class="row-odd"><td><ol class="upperalpha simple" start="19">
+<li><p>italica</p></li>
+</ol>
+</td>
+<td><p>Sitalica_flower_1</p></td>
+<td><p>131086536</p></td>
+<td><p>0.9924</p></td>
+<td><p>0.23</p></td>
+<td><p>91809521</p></td>
+<td><p>7.196102</p></td>
+<td><p>96573</p></td>
+<td><p>ATAC-seq, flower, rep1</p></td>
+<td><p>91008</p></td>
+<td><p>0.017775</p></td>
+<td><p>318</p></td>
+<td><p>0.0106169871794871</p></td>
+<td><p>0.9497</p></td>
+<td><p>0.7372</p></td>
+</tr>
+<tr class="row-even"><td><ol class="upperalpha simple" start="19">
+<li><p>italica</p></li>
+</ol>
+</td>
+<td><p>Sitalica_root_2c_1</p></td>
+<td><p>25735750</p></td>
+<td><p>0.8962</p></td>
+<td><p>0.4955</p></td>
+<td><p>7709618</p></td>
+<td><p>7.4828</p></td>
+<td><p>30919</p></td>
+<td><p>ATAC-seq, root, rep1</p></td>
+<td><p>102140</p></td>
+<td><p>0.01994921875</p></td>
+<td><p>339</p></td>
+<td><p>0.0113181089743589</p></td>
+<td><p>0.9806</p></td>
+<td><p>0.4096</p></td>
+</tr>
+<tr class="row-odd"><td><ol class="upperalpha simple" start="19">
+<li><p>italica</p></li>
+</ol>
+</td>
+<td><p>Sitalica_young_leaf_2c_2</p></td>
+<td><p>57397792</p></td>
+<td><p>0.982</p></td>
+<td><p>0.5489</p></td>
+<td><p>19638669</p></td>
+<td><p>9.739894</p></td>
+<td><p>41305</p></td>
+<td><p>ATAC-seq, young leaf, rep2</p></td>
+<td><p>72681</p></td>
+<td><p>0.01135640625</p></td>
+<td><p>956</p></td>
+<td><p>0.0119691506410256</p></td>
+<td><p>0.9611</p></td>
+<td><p>0.6128</p></td>
+</tr>
+<tr class="row-even"><td><ol class="upperalpha simple" start="19">
+<li><p>italica</p></li>
+</ol>
+</td>
+<td><p>Sitalica_flower_2</p></td>
+<td><p>138357024</p></td>
+<td><p>0.992</p></td>
+<td><p>0.2077</p></td>
+<td><p>99270572</p></td>
+<td><p>7.344447</p></td>
+<td><p>90325</p></td>
+<td><p>ATAC-seq, flower, rep2</p></td>
+<td><p>121054</p></td>
+<td><p>0.023643359375</p></td>
+<td><p>443</p></td>
+<td><p>0.0147903311965811</p></td>
+<td><p>0.9492</p></td>
+<td><p>0.7337</p></td>
+</tr>
+<tr class="row-odd"><td><ol class="upperalpha simple" start="19">
+<li><p>italica</p></li>
+</ol>
+</td>
+<td><p>Sitalica_flag_leaf_1</p></td>
+<td><p>141996604</p></td>
+<td><p>0.9915</p></td>
+<td><p>0.2786</p></td>
+<td><p>85924479</p></td>
+<td><p>6.056993</p></td>
+<td><p>65882</p></td>
+<td><p>ATAC-seq, flag leaf, rep1</p></td>
+<td><p>162685</p></td>
+<td><p>0.0317744140625</p></td>
+<td><p>615</p></td>
+<td><p>0.0205328525641025</p></td>
+<td><p>0.9475</p></td>
+<td><p>0.6707</p></td>
+</tr>
+<tr class="row-even"><td><ol class="upperalpha simple" start="19">
+<li><p>italica</p></li>
+</ol>
+</td>
+<td><p>Sitalica_panicle_2</p></td>
+<td><p>150142666</p></td>
+<td><p>0.9871</p></td>
+<td><p>0.2297</p></td>
+<td><p>100733619</p></td>
+<td><p>6.378559</p></td>
+<td><p>94699</p></td>
+<td><p>ATAC-seq, young panicle, rep2</p></td>
+<td><p>192586</p></td>
+<td><p>0.037614453125</p></td>
+<td><p>742</p></td>
+<td><p>0.02477297008547</p></td>
+<td><p>0.9515</p></td>
+<td><p>0.7491</p></td>
+</tr>
+<tr class="row-odd"><td><ol class="upperalpha simple" start="19">
+<li><p>italica</p></li>
+</ol>
+</td>
+<td><p>Sitalica_flag_leaf_2</p></td>
+<td><p>100706220</p></td>
+<td><p>0.9926</p></td>
+<td><p>0.2437</p></td>
+<td><p>63693010</p></td>
+<td><p>6.293736</p></td>
+<td><p>58992</p></td>
+<td><p>ATAC-seq, flag leaf, rep2</p></td>
+<td><p>224032</p></td>
+<td><p>0.04375625</p></td>
+<td><p>856</p></td>
+<td><p>0.0285790598290598</p></td>
+<td><p>0.9491</p></td>
+<td><p>0.639</p></td>
+</tr>
+<tr class="row-even"><td><ol class="upperalpha simple" start="26">
+<li><p>mays</p></li>
+</ol>
+</td>
+<td><p>Zmays_ear_big_top_1</p></td>
+<td><p>96724598</p></td>
+<td><p>0.9955</p></td>
+<td><p>0.3522</p></td>
+<td><p>40851048</p></td>
+<td><p>10.56143</p></td>
+<td><p>78382</p></td>
+<td><p>ATAC-seq, upper part of  ~1cm ear, rep1</p></td>
+<td><p>39169</p></td>
+<td><p>0.00612015625</p></td>
+<td><p>528</p></td>
+<td><p>0.00661057692307692</p></td>
+<td><p>0.9802</p></td>
+<td><p>0.5315</p></td>
+</tr>
+<tr class="row-odd"><td><ol class="upperalpha simple" start="26">
+<li><p>mays</p></li>
+</ol>
+</td>
+<td><p>Zmays_ear_big_bottom_2</p></td>
+<td><p>96513184</p></td>
+<td><p>0.9939</p></td>
+<td><p>0.3728</p></td>
+<td><p>38466973</p></td>
+<td><p>11.24552</p></td>
+<td><p>80019</p></td>
+<td><p>ATAC-seq, bottom part of ~1cm ear, rep2</p></td>
+<td><p>53425</p></td>
+<td><p>0.00834765625</p></td>
+<td><p>696</p></td>
+<td><p>0.0087139423076923</p></td>
+<td><p>0.9828</p></td>
+<td><p>0.5456</p></td>
+</tr>
+<tr class="row-even"><td><ol class="upperalpha simple" start="26">
+<li><p>mays</p></li>
+</ol>
+</td>
+<td><p>Zmays_ear_big_bottom_1</p></td>
+<td><p>92636560</p></td>
+<td><p>0.996</p></td>
+<td><p>0.3325</p></td>
+<td><p>40570461</p></td>
+<td><p>10.98669</p></td>
+<td><p>78983</p></td>
+<td><p>ATAC-seq, bottom part of ~1cm ear, rep1</p></td>
+<td><p>61812</p></td>
+<td><p>0.009658125</p></td>
+<td><p>823</p></td>
+<td><p>0.0103039863782051</p></td>
+<td><p>0.9807</p></td>
+<td><p>0.5326</p></td>
+</tr>
+<tr class="row-odd"><td><ol class="upperalpha simple" start="26">
+<li><p>mays</p></li>
+</ol>
+</td>
+<td><p>Zmays_ear_big_top_2</p></td>
+<td><p>101609846</p></td>
+<td><p>0.9939</p></td>
+<td><p>0.3889</p></td>
+<td><p>38784430</p></td>
+<td><p>10.24869</p></td>
+<td><p>75514</p></td>
+<td><p>ATAC-seq, upper part of  ~1cm ear, rep2</p></td>
+<td><p>87961</p></td>
+<td><p>0.01374390625</p></td>
+<td><p>1101</p></td>
+<td><p>0.0137845552884615</p></td>
+<td><p>0.9826</p></td>
+<td><p>0.543</p></td>
+</tr>
+<tr class="row-even"><td><ol class="upperalpha simple" start="26">
+<li><p>mays</p></li>
+</ol>
+</td>
+<td><p>Zmays_young_leaf_2c_3</p></td>
+<td><p>126330162</p></td>
+<td><p>0.9727</p></td>
+<td><p>0.3883</p></td>
+<td><p>57581514</p></td>
+<td><p>13.04916</p></td>
+<td><p>83836</p></td>
+<td><p>ATAC-seq, young leaf, rep3</p></td>
+<td><p>101406</p></td>
+<td><p>0.019805859375</p></td>
+<td><p>258</p></td>
+<td><p>0.0173760775862068</p></td>
+<td><p>0.9814</p></td>
+<td><p>0.5561</p></td>
+</tr>
+<tr class="row-odd"><td><ol class="upperalpha simple" start="26">
+<li><p>mays</p></li>
+</ol>
+</td>
+<td><p>Zmays_root_2c_2</p></td>
+<td><p>158419674</p></td>
+<td><p>0.432</p></td>
+<td><p>0.1117</p></td>
+<td><p>24442269</p></td>
+<td><p>14.79416</p></td>
+<td><p>115869</p></td>
+<td><p>ATAC-seq, root, rep2</p></td>
+<td><p>111460</p></td>
+<td><p>0.02176953125</p></td>
+<td><p>310</p></td>
+<td><p>0.0208782327586206</p></td>
+<td><p>0.9862</p></td>
+<td><p>0.4249</p></td>
+</tr>
+<tr class="row-even"><td><ol class="upperalpha simple" start="26">
+<li><p>mays</p></li>
+</ol>
+</td>
+<td><p>Zmays_root_2c_3</p></td>
+<td><p>159349756</p></td>
+<td><p>0.9975</p></td>
+<td><p>0.3186</p></td>
+<td><p>80469075</p></td>
+<td><p>11.95208</p></td>
+<td><p>90430</p></td>
+<td><p>ATAC-seq, root, rep3</p></td>
+<td><p>158819</p></td>
+<td><p>0.0310193359375</p></td>
+<td><p>458</p></td>
+<td><p>0.0308459051724137</p></td>
+<td><p>0.9813</p></td>
+<td><p>0.5718</p></td>
+</tr>
+<tr class="row-odd"><td><ol class="upperalpha simple" start="26">
+<li><p>mays</p></li>
+</ol>
+</td>
+<td><p>Zmays_young_leaf_2c_1</p></td>
+<td><p>141333474</p></td>
+<td><p>0.9523</p></td>
+<td><p>0.3596</p></td>
+<td><p>41587718</p></td>
+<td><p>16.61737</p></td>
+<td><p>90227</p></td>
+<td><p>ATAC-seq, young leaf, rep1</p></td>
+<td><p>242864</p></td>
+<td><p>0.047434375</p></td>
+<td><p>616</p></td>
+<td><p>0.0414870689655172</p></td>
+<td><p>0.9866</p></td>
+<td><p>0.5354</p></td>
+</tr>
+<tr class="row-even"><td><ol class="upperalpha simple" start="26">
+<li><p>mays</p></li>
+</ol>
+</td>
+<td><p>Zmays_root_2c_1</p></td>
+<td><p>226773650</p></td>
+<td><p>0.5024</p></td>
+<td><p>0.1413</p></td>
+<td><p>42431275</p></td>
+<td><p>15.08277</p></td>
+<td><p>129812</p></td>
+<td><p>ATAC-seq, root, rep1</p></td>
+<td><p>226605</p></td>
+<td><p>0.0442587890625</p></td>
+<td><p>620</p></td>
+<td><p>0.0417564655172413</p></td>
+<td><p>0.9847</p></td>
+<td><p>0.4657</p></td>
+</tr>
+<tr class="row-odd"><td><ol class="upperalpha simple" start="26">
+<li><p>mays</p></li>
+</ol>
+</td>
+<td><p>Zmays_young_leaf_2c_2</p></td>
+<td><p>103976508</p></td>
+<td><p>0.9484</p></td>
+<td><p>0.3064</p></td>
+<td><p>30621551</p></td>
+<td><p>15.40104</p></td>
+<td><p>74194</p></td>
+<td><p>ATAC-seq, young leaf, rep2</p></td>
+<td><p>234570</p></td>
+<td><p>0.045814453125</p></td>
+<td><p>621</p></td>
+<td><p>0.0418238146551724</p></td>
+<td><p>0.988</p></td>
+<td><p>0.5087</p></td>
+</tr>
+<tr class="row-even"><td><ol class="upperalpha simple" start="26">
+<li><p>mays</p></li>
+</ol>
+</td>
+<td><p>Zmays_flower_1</p></td>
+<td><p>105904206</p></td>
+<td><p>0.9923</p></td>
+<td><p>0.2676</p></td>
+<td><p>53849927</p></td>
+<td><p>5.366069</p></td>
+<td><p>24274</p></td>
+<td><p>ATAC-seq, young tassel spikelet, rep1</p></td>
+<td><p>250943</p></td>
+<td><p>0.0490123046875</p></td>
+<td><p>624</p></td>
+<td><p>0.0420258620689655</p></td>
+<td><p>0.9827</p></td>
+<td><p>0.2921</p></td>
+</tr>
+<tr class="row-odd"><td><ol class="upperalpha simple" start="26">
+<li><p>mays</p></li>
+</ol>
+</td>
+<td><p>Zmays_tassel_bottom_1</p></td>
+<td><p>94275220</p></td>
+<td><p>0.9963</p></td>
+<td><p>0.3106</p></td>
+<td><p>42417005</p></td>
+<td><p>8.869163</p></td>
+<td><p>56382</p></td>
+<td><p>ATAC-seq, bottom part of ~1cm tassel, rep1</p></td>
+<td><p>243257</p></td>
+<td><p>0.0475111328125</p></td>
+<td><p>637</p></td>
+<td><p>0.0429014008620689</p></td>
+<td><p>0.9835</p></td>
+<td><p>0.504</p></td>
+</tr>
+<tr class="row-even"><td><ol class="upperalpha simple" start="26">
+<li><p>mays</p></li>
+</ol>
+</td>
+<td><p>Zmays_flower_2</p></td>
+<td><p>112607990</p></td>
+<td><p>0.9975</p></td>
+<td><p>0.289</p></td>
+<td><p>55191321</p></td>
+<td><p>5.52845</p></td>
+<td><p>25693</p></td>
+<td><p>ATAC-seq, young tassel spikelet, rep2</p></td>
+<td><p>264358</p></td>
+<td><p>0.051632421875</p></td>
+<td><p>655</p></td>
+<td><p>0.0441136853448275</p></td>
+<td><p>0.9888</p></td>
+<td><p>0.3178</p></td>
+</tr>
+<tr class="row-odd"><td><ol class="upperalpha simple" start="26">
+<li><p>mays</p></li>
+</ol>
+</td>
+<td><p>Zmays_ear_small_1</p></td>
+<td><p>91987754</p></td>
+<td><p>0.9944</p></td>
+<td><p>0.3956</p></td>
+<td><p>36094115</p></td>
+<td><p>11.04664</p></td>
+<td><p>77335</p></td>
+<td><p>ATAC-seq,  ~5mm ear, rep1</p></td>
+<td><p>261472</p></td>
+<td><p>0.05106875</p></td>
+<td><p>683</p></td>
+<td><p>0.0459994612068965</p></td>
+<td><p>0.98</p></td>
+<td><p>0.5302</p></td>
+</tr>
+<tr class="row-even"><td><ol class="upperalpha simple" start="26">
+<li><p>mays</p></li>
+</ol>
+</td>
+<td><p>Zmays_tassel_bottom_2</p></td>
+<td><p>86178832</p></td>
+<td><p>0.9955</p></td>
+<td><p>0.3613</p></td>
+<td><p>35351943</p></td>
+<td><p>9.707942</p></td>
+<td><p>61634</p></td>
+<td><p>ATAC-seq, bottom part of ~1cm tassel, rep2</p></td>
+<td><p>254837</p></td>
+<td><p>0.0497728515625</p></td>
+<td><p>689</p></td>
+<td><p>0.0464035560344827</p></td>
+<td><p>0.9826</p></td>
+<td><p>0.5025</p></td>
+</tr>
+<tr class="row-odd"><td><ol class="upperalpha simple" start="26">
+<li><p>mays</p></li>
+</ol>
+</td>
+<td><p>Zmays_ear_small_2</p></td>
+<td><p>96011440</p></td>
+<td><p>0.994</p></td>
+<td><p>0.325</p></td>
+<td><p>42612007</p></td>
+<td><p>11.05327</p></td>
+<td><p>87925</p></td>
+<td><p>ATAC-seq,  ~5mm ear, rep2</p></td>
+<td><p>276548</p></td>
+<td><p>0.05401328125</p></td>
+<td><p>723</p></td>
+<td><p>0.0486934267241379</p></td>
+<td><p>0.9815</p></td>
+<td><p>0.5571</p></td>
+</tr>
+<tr class="row-even"><td><ol class="upperalpha simple" start="26">
+<li><p>mays</p></li>
+</ol>
+</td>
+<td><p>Zmays_tassel_top_1</p></td>
+<td><p>180483274</p></td>
+<td><p>0.9963</p></td>
+<td><p>0.413</p></td>
+<td><p>71579847</p></td>
+<td><p>9.0775</p></td>
+<td><p>68782</p></td>
+<td><p>ATAC-seq, upper part of  ~1cm tassel, rep1</p></td>
+<td><p>286296</p></td>
+<td><p>0.0559171875</p></td>
+<td><p>757</p></td>
+<td><p>0.0509832974137931</p></td>
+<td><p>0.9823</p></td>
+<td><p>0.5379</p></td>
+</tr>
+<tr class="row-odd"><td><ol class="upperalpha simple" start="26">
+<li><p>mays</p></li>
+</ol>
+</td>
+<td><p>Zmays_flag_leaf_2</p></td>
+<td><p>100750444</p></td>
+<td><p>0.9951</p></td>
+<td><p>0.4233</p></td>
+<td><p>39828337</p></td>
+<td><p>9.488862</p></td>
+<td><p>60508</p></td>
+<td><p>ATAC-seq, flag leaf, rep2</p></td>
+<td><p>386108</p></td>
+<td><p>0.07541171875</p></td>
+<td><p>1014</p></td>
+<td><p>0.0682920258620689</p></td>
+<td><p>0.9823</p></td>
+<td><p>0.4529</p></td>
+</tr>
+<tr class="row-even"><td><ol class="upperalpha simple" start="26">
+<li><p>mays</p></li>
+</ol>
+</td>
+<td><p>Zmays_flag_leaf_1</p></td>
+<td><p>95249354</p></td>
+<td><p>0.9969</p></td>
+<td><p>0.3709</p></td>
+<td><p>43570772</p></td>
+<td><p>8.550059</p></td>
+<td><p>51086</p></td>
+<td><p>ATAC-seq, flag leaf, rep1</p></td>
+<td><p>389894</p></td>
+<td><p>0.076151171875</p></td>
+<td><p>1025</p></td>
+<td><p>0.0690328663793103</p></td>
+<td><p>0.9823</p></td>
+<td><p>0.4435</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="10-Citation.html" class="btn btn-neutral float-right" title="Citation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="08-Statistics.html" class="btn btn-neutral float-left" title="Resources" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, PlantDeepSEA Contributors
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

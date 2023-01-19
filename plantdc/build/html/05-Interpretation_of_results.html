@@ -1,0 +1,358 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Interpretation of Results &mdash; PlantDeepSEA  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Blast" href="06-Blast.html" />
+    <link rel="prev" title="Query Results" href="04-Query_Results.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> PlantDeepSEA
+          
+
+          
+            
+            <img src="_static/logo113.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Overview</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="01-Home_Page.html">Home Page</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02-Model_selection.html">Model Selection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03-Submit_Task.html">Submit Task</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04-Query_Results.html">Query Results</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Interpretation of Results</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#brief-description">Brief Description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#main-functions">Main Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#about-the-result-files">About the result files</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="06-Blast.html">Blast</a></li>
+<li class="toctree-l1"><a class="reference internal" href="07-Case_Studies.html">Case Studies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="08-Statistics.html">Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="09-Statistic.html">Statistics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="10-Citation.html">Citation</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">PlantDeepSEA</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Interpretation of Results</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/05-Interpretation_of_results.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="interpretation-of-results">
+<h1>Interpretation of Results<a class="headerlink" href="#interpretation-of-results" title="Permalink to this headline">¶</a></h1>
+<p>After the task is completed, enter the task ID query to obtain the model prediction results.</p>
+<div class="section" id="brief-description">
+<h2>Brief Description<a class="headerlink" href="#brief-description" title="Permalink to this headline">¶</a></h2>
+<p>The left side of the upper part of the result interface is the task ID query column, and the right side shows the download link of the forecast result compression package and task information (as shown in the figure below,take chromosome number and position input as an example).</p>
+<img alt="_images/1__.png" src="_images/1__.png" />
+<p>The lower part of the result interface is a visual display of the prediction results generated. For different task types, the returned results are slightly different, see the <strong>Main Functions</strong> part of this section for details. Here are two examples (see the figure below) for reference.</p>
+<p>Enter the chromosome number and position, and return the following result. The visualization result is generated by bokeh.</p>
+<img alt="_images/RESULT0_.png" src="_images/RESULT0_.png" />
+<img alt="_images/RESULT1_.png" src="_images/RESULT1_.png" />
+<p>For VCF format input, the interactive scatter plot is returned as follows.</p>
+<img alt="_images/RESULT_3.png" src="_images/RESULT_3.png" />
+<p>In addition, at the bottom of the results interface, you may also get a fimo scan result, if fimo does scan the result(as shown below).</p>
+<img alt="_images/RESULT4_.png" src="_images/RESULT4_.png" />
+</div>
+<div class="section" id="main-functions">
+<h2>Main Functions<a class="headerlink" href="#main-functions" title="Permalink to this headline">¶</a></h2>
+<p><strong>1.Variant Effector</strong></p>
+<p>We predicted changes in chromatin features in a 1-kb region around the mutation (upstream 500 bp and downstream 500 bp). You are supposed to submit a vcf file to generate a background prediciton task, note that there is no limit for the num of lines of your VCF file by now. For each mutation in your VCF file, we predict the scores of changes (may be positive or negative) in every sample of this model, then display all results via scatterplot.</p>
+<p><strong>Input</strong>: A VCF file in any length.</p>
+<p><strong>Output</strong>: After your submission, our system will return a task id, which is essential, go to the result page to find out your prediciton result via the task id. Input your task id to search your result stored on our server (contains the vcf file you submitted and all scores file and result scatterplot in html format)</p>
+<p><strong>2.Sequence Profiler</strong></p>
+<p>Sequence Profiler is used to analyse posible motif or important mutation in a 1-kb DNA sequence from reference genome file. You can generate a prediciton request through 2 ways:</p>
+<p>(1)By select a chromomsome and input a position:</p>
+<p>After receiveing the chromomsome and position information, we predict the mutation of the middle 200-bp sequence in the range of the middle 1-kb region (for each position of the 200-bp, our server simulate the difference mutation effect of the reference allele and the other 3 alter allele, thus return a 200*4 matrix afterwards, and display the matrix in the html result page through a interactive bokeh heatmap).</p>
+<p><strong>Input</strong>: Select a chromomsome and input a position</p>
+<p><strong>Output</strong>: The web page returns a heatmap, a line plot and fimo result, the heatmap shows the 200*4 matrix and line plot shows continuous positive or negative scores of a possible motif (named gain line or loss line respectively). Fimo result shows possible motif get in meme database of this DNA sequence.</p>
+<p>(2)By upload a BED file:</p>
+<p>Unlike predicting VCF file in Variant Effector, we only calculate the top 5 lines of your BED file due to our limited GPU resource. For each line in the top 5 lines of your BED file, the server does the same work described in (1).</p>
+<p><strong>Input</strong>: A BED file in any length.</p>
+<p><strong>Output</strong>: Prediction result of the top 5 lines of your BED file, web result description same as (1).</p>
+<p>(3)By inputting the FASTA sequence:</p>
+<p>Input any length of FASTA sequence you are interested in, and the model will intercept the middle 1000bp (if the input length is greater than 1000bp) or fill 1000bp at both ends (if the input length is less than 1000bp) for prediction.</p>
+<p><strong>Input</strong>: Any length of FASTA sequence you are interested in.</p>
+<p><strong>Output</strong>: The web page returns a heatmap, a line plot and fimo result, the heatmap shows the 200*4 matrix and line plot shows continuous positive or negative scores of a possible motif (named gain line or loss line respectively). Fimo result shows possible motif get in meme database of this DNA sequence.</p>
+</div>
+<div class="section" id="about-the-result-files">
+<h2>About the result files<a class="headerlink" href="#about-the-result-files" title="Permalink to this headline">¶</a></h2>
+<img alt="_images/RESULT_5.png" src="_images/RESULT_5.png" />
+<p><strong>1.The task of predicting sequence</strong> (For example,ID：<a class="reference external" href="http://plantdeepsea.ncpgr.cn/search_all_selene_result/?taskid=2847_16177604444503944">2847_16177604444503944</a>)</p>
+<p>The contents of the compressed package are generally as follows:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 11%" />
+<col style="width: 89%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>File Name</p></th>
+<th class="head"><p>Note</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>cisml.xml</p></td>
+<td><p>Motif information (CisML format) matched by 200 bp segment scanned by Fimo</p></td>
+</tr>
+<tr class="row-odd"><td><p>fimo.gff</p></td>
+<td><p>Motif information (GFF format) matched by 200 bp segment scanned by Fimo</p></td>
+</tr>
+<tr class="row-even"><td><p>fimo.html</p></td>
+<td><p>Motif information (HTML format) matched by 200 bp segment scanned by Fimo</p></td>
+</tr>
+<tr class="row-odd"><td><p>fimo.tsv</p></td>
+<td><p>Motif information (TSV format) matched by 200 bp segment scanned by Fimo</p></td>
+</tr>
+<tr class="row-even"><td><p>fimo.xml</p></td>
+<td><p>Motif information (in XML format) matched by 200 bp segment scanned by Fimo</p></td>
+</tr>
+<tr class="row-odd"><td><p>fimo_cut.tsv</p></td>
+<td><p>Optimized(by PlantDeepSEA) version of fimo.tsv</p></td>
+</tr>
+<tr class="row-even"><td><p>do_fimo.bed</p></td>
+<td><p>Record the position information of 200 bp section</p></td>
+</tr>
+<tr class="row-odd"><td><p>do_fimo.fasta</p></td>
+<td><p>The FASTA file of the sequence</p></td>
+</tr>
+<tr class="row-even"><td><p>ism_logits.tsv</p></td>
+<td><p>log(<em>P</em><sub>mut</sub> / (1-<em>P</em><sub>mut</sub>)) - log(<em>P</em><sub>ref</sub> / (1-<em>P</em><sub>ref</sub>)) , the difference between <cite>logit(mut)</cite> and <cite>logit(ref)</cite> predictions</p></td>
+</tr>
+<tr class="row-odd"><td><p>ism_diffs.tsv</p></td>
+<td><p><em>P</em><sub>mut</sub> - <em>P</em><sub>ref</sub> , the difference between <cite>mut ` and `ref</cite> predictions</p></td>
+</tr>
+<tr class="row-even"><td><p>ism_abs_diffs.tsv</p></td>
+<td><p>| <em>P</em><sub>mut</sub> - <em>P</em><sub>ref</sub> | , the absolute difference between <cite>mut</cite> and <cite>ref</cite> predictions</p></td>
+</tr>
+<tr class="row-odd"><td><p>ism_predictions.tsv</p></td>
+<td><p>After Selene SDK prediction, the input sequence was scored three times per mutation</p></td>
+</tr>
+</tbody>
+</table>
+<p>The mut in the formula in the table refers to mutagenesis.</p>
+<p>The interpretation of various formats of Fimo results is detailed <a class="reference external" href="https://meme-suite.org/meme/doc/fimo.html">here</a>.</p>
+<p>ism_predictions.tsv is the score of each mutation of the input 1000bp sequence three times after the prediction of Selene SDK. It records the absolute value of the difference, the true value of the difference, the Logits value and the true score of each mutation sequence.</p>
+<p>Each PDF file in the compressed package is the drawing of each organization.</p>
+<p><strong>2.VCF variation annotation task</strong> (For example,ID：<a class="reference external" href="http://plantdeepsea.ncpgr.cn/search_all_selene_result/?taskid=2870_16178001127678075">2870_16178001127678075</a>)</p>
+<p>The contents of the compressed package are generally as follows:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 76%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>File Name</p></th>
+<th class="head"><p>Note</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>dep1_MH63_ref.vcf</p></td>
+<td><p>VCF files submitted by users</p></td>
+</tr>
+<tr class="row-odd"><td><p>dep1_MH63_ref_abs_diffs.tsv</p></td>
+<td><p>| <em>P</em><sub>mut</sub> - <em>P</em><sub>ref</sub> | , Absolute value of difference before and after mutation of each locus</p></td>
+</tr>
+<tr class="row-even"><td><p>dep1_MH63_ref.alt_predictions.tsv</p></td>
+<td><p>Scoring value of each locus variation</p></td>
+</tr>
+<tr class="row-odd"><td><p>dep1_MH63_ref_diffs.tsv</p></td>
+<td><p><em>P</em><sub>mut</sub> - <em>P</em><sub>ref</sub> , value of difference before and after mutation of each locus</p></td>
+</tr>
+<tr class="row-even"><td><p>dep1_MH63_ref_logits.tsv</p></td>
+<td><p>Logits value before mutation of each locus</p></td>
+</tr>
+<tr class="row-odd"><td><p>dep1_MH63_ref.ref_predictions.tsv</p></td>
+<td><p>Score before variation of each locus</p></td>
+</tr>
+</tbody>
+</table>
+<p>The above TSV files are the scoring files predicted by <a class="reference external" href="https://selene.flatironinstitute.org/master/index.html">selene SDK</a></p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="06-Blast.html" class="btn btn-neutral float-right" title="Blast" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="04-Query_Results.html" class="btn btn-neutral float-left" title="Query Results" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, PlantDeepSEA Contributors
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
