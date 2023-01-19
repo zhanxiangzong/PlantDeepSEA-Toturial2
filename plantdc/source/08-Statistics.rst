@@ -104,4 +104,4 @@ This model structure is Selene's DeeperDeepSEA structure .
 
 A guide to applying the model locally
 --------------------------------
-You can click `here <https://github.com/zhanxiangzong/PlantDeepSEA-Toturial2/blob/master/using_example.ipynb>`_ to see how the models are trained and how to apply the trained models provided in PlantDeepSEA.
+You can click `here <https://github.com/zhanxiangzong/PlantDeepSEA-Toturial2/blob/master/using_example.ipynb>`_ to see how the models are trained and how to apply the trained models provided in PlantDeepSEA locally.
